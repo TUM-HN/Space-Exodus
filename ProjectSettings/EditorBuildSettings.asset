@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/1 Start Scene.unity
+    guid: 5316e5cfeec774d32b196c98f1e2ff84
+  - enabled: 1
+    path: Assets/Scenes/Space Ship Scene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 73da10cd450544b838498281e0abd3a4,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1d5fb3da681494f7a84dcba02d145ed7,
+      type: 2}
