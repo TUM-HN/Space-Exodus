@@ -45,6 +45,7 @@ public class AudioManager : MonoBehaviour
             if (s.playOnAwake)
                 s.source.Play();
 
+            //s.source.volume = PlayerPrefs.GetFloat("SliderVolumelevel", s.volume);
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
