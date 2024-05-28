@@ -95,7 +95,7 @@ PlayerSettings:
   resizableWindow: 0
   useMacAppStoreValidation: 0
   macAppStoreCategory: public.app-category.games
-  gpuSkinning: 0
+  gpuSkinning: 1
   xboxPIXTextureCapture: 0
   xboxEnableAvatar: 0
   xboxEnableKinect: 0
@@ -142,6 +142,8 @@ PlayerSettings:
   bundleVersion: 1.0
   preloadedAssets:
   - {fileID: 11400000, guid: d1f6dbd12c33542d8b0354f8e013e952, type: 2}
+  - {fileID: 380841763997865446, guid: 1d5fb3da681494f7a84dcba02d145ed7, type: 2}
+  - {fileID: 11400000, guid: 73da10cd450544b838498281e0abd3a4, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
