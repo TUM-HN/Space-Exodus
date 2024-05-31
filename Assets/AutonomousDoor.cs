@@ -16,6 +16,7 @@ public class AutonomousDoor : MonoBehaviour
 
     private void OpenDoor() {
         bool isOpen = animator.GetBool(boolName);
+        AudioManager.instance.Play("Door");
         animator.SetBool(boolName, !isOpen);
 
         if (animator.GetBool(boolName)) StartCoroutine(coroutine());
