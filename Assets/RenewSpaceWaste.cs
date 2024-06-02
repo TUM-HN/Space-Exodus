@@ -9,13 +9,17 @@ public class RenewSpaceWaste : MonoBehaviour
 
     void Start()
     {
-        foreach (var meteor in Meteors) { meteor.SetActive(true); }
+        foreach (var meteor in Meteors) {
+            meteor.SetActive(true);
+        }
         count = Meteors.Count;
     }
 
     private void ResetMeteor()
     {
-        foreach (var meteor in Meteors) { meteor.SetActive(true); }
+        foreach (var meteor in Meteors) {
+            meteor.SetActive(true);
+        }
         count = Meteors.Count;
     }
 
