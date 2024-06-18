@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class RenewSpaceWaste : MonoBehaviour
 {
     public List<GameObject> Meteors;
+    public UnityEvent<GameObject> onEnterEvent;
+
     float count;
 
     void Start()
@@ -29,6 +32,7 @@ public class RenewSpaceWaste : MonoBehaviour
         if (count == 0)
         {
             StartCoroutine(Coroutine());
+            onEnterEvent.Invoke(gameObject);
         }
     }
 
