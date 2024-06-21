@@ -25,7 +25,8 @@ public class RenewBricks : MonoBehaviour
 
     private void GenerateNewBrick() {
         int brickNumber = UnityEngine.Random.Range(0, bricks.Count - 1);
-        GameObject newBrick = GameObject.Instantiate(bricks[brickNumber], transform.position, transform.rotation);
+        GameObject newBrick = GameObject.Instantiate(bricks[brickNumber], origin, transform.rotation);
+        newBrick.SetActive(true);
         brick = newBrick;
     }
 }
