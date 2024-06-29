@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: 61926b623b25e484699003ffb96c4480
+timeCreated: 1457994388
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 1Bloques1Compuesto
+    100002: 1Bloques1Simple
+    100004: 1Bloques1Simple 1
+    100006: 2Bloques1Compuesto
+    100008: 2Bloques1Simple
+    100010: 3Bloques1Compuesto
+    100012: 3Bloques1Simple
+    100014: Agujero1Compuesto
+    100016: Agujero1Simple
+    100018: Cylinder001
+    100020: Cylinder002
+    100022: //RootNode
+    100024: MuroGrande1Compuesta
+    100026: MuroGrande1Simple
+    100028: MuroMediano1Compuesta
+    100030: MuroMediano1Simple
+    100032: "MuroPeque\xF1o1Compuesta"
+    100034: "MuroPeque\xF1o1Simple"
+    100036: ParedGrande1Compuesta
+    100038: ParedGrande1Simple
+    100040: ParedMediana1Compuesta
+    100042: PlanchaPisos
+    100044: Resalto
+    400000: 1Bloques1Compuesto
+    400002: 1Bloques1Simple
+    400004: 1Bloques1Simple 1
+    400006: 2Bloques1Compuesto
+    400008: 2Bloques1Simple
+    400010: 3Bloques1Compuesto
+    400012: 3Bloques1Simple
+    400014: Agujero1Compuesto
+    400016: Agujero1Simple
+    400018: Cylinder001
+    400020: Cylinder002
+    400022: //RootNode
+    400024: MuroGrande1Compuesta
+    400026: MuroGrande1Simple
+    400028: MuroMediano1Compuesta
+    400030: MuroMediano1Simple
+    400032: "MuroPeque\xF1o1Compuesta"
+    400034: "MuroPeque\xF1o1Simple"
+    400036: ParedGrande1Compuesta
+    400038: ParedGrande1Simple
+    400040: ParedMediana1Compuesta
+    400042: PlanchaPisos
+    400044: Resalto
+    2300000: 1Bloques1Compuesto
+    2300002: 1Bloques1Simple 1
+    2300004: 2Bloques1Compuesto
+    2300006: 2Bloques1Simple
+    2300008: 3Bloques1Compuesto
+    2300010: 3Bloques1Simple
+    2300012: Agujero1Compuesto
+    2300014: Agujero1Simple
+    2300016: Cylinder001
+    2300018: Cylinder002
+    2300020: MuroGrande1Compuesta
+    2300022: MuroGrande1Simple
+    2300024: MuroMediano1Compuesta
+    2300026: MuroMediano1Simple
+    2300028: "MuroPeque\xF1o1Compuesta"
+    2300030: "MuroPeque\xF1o1Simple"
+    2300032: ParedGrande1Compuesta
+    2300034: ParedGrande1Simple
+    2300036: ParedMediana1Compuesta
+    2300038: PlanchaPisos
+    2300040: Resalto
+    3300000: 1Bloques1Compuesto
+    3300002: 1Bloques1Simple 1
+    3300004: 2Bloques1Compuesto
+    3300006: 2Bloques1Simple
+    3300008: 3Bloques1Compuesto
+    3300010: 3Bloques1Simple
+    3300012: Agujero1Compuesto
+    3300014: Agujero1Simple
+    3300016: Cylinder001
+    3300018: Cylinder002
+    3300020: MuroGrande1Compuesta
+    3300022: MuroGrande1Simple
+    3300024: MuroMediano1Compuesta
+    3300026: MuroMediano1Simple
+    3300028: "MuroPeque\xF1o1Compuesta"
+    3300030: "MuroPeque\xF1o1Simple"
+    3300032: ParedGrande1Compuesta
+    3300034: ParedGrande1Simple
+    3300036: ParedMediana1Compuesta
+    3300038: PlanchaPisos
+    3300040: Resalto
+    4300000: PlanchaPisos
+    4300002: MuroMediano1Simple
+    4300004: Agujero1Simple
+    4300006: "MuroPeque\xF1o1Simple"
+    4300008: "MuroPeque\xF1o1Compuesta"
+    4300010: MuroMediano1Compuesta
+    4300012: ParedMediana1Compuesta
+    4300014: MuroGrande1Compuesta
+    4300016: MuroGrande1Simple
+    4300018: Resalto
+    4300020: ParedGrande1Simple
+    4300022: ParedGrande1Compuesta
+    4300024: Cylinder001
+    4300026: Cylinder002
+    4300028: 3Bloques1Simple
+    4300030: 3Bloques1Compuesto
+    4300032: 2Bloques1Simple
+    4300034: 2Bloques1Compuesto
+    4300036: 1Bloques1Compuesto
+    4300038: 1Bloques1Simple
+    4300040: Agujero1Compuesto
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 0
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

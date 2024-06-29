@@ -9,6 +9,12 @@ TagManager:
   - Right Hand
   - Energy
   - RandomPoint
+  - Pieza1
+  - car1
+  - Pieza2
+  - car2
+  - Pieza
+  - Explota
   layers:
   - Default
   - TransparentFX
@@ -16,7 +22,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Vehicle Control
   - 
   - 
   - 
