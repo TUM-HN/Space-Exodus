@@ -6904,7 +6904,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Driving toturial
+  m_text: "To enter or exit a car, touch the car body and press the \"select\" and
+    \"activate\" buttons simultaneously. \n\nEach car has an accelerator (lever on
+    the right), steering wheel, and emergency button (left). \n\nPressing the emergency
+    button (grab button) will return the car to its initial position."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed,
@@ -17357,7 +17360,7 @@ Transform:
   m_GameObject: {fileID: 897243643}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.989, z: 0.841}
+  m_LocalPosition: {x: 0, y: 0.989, z: 0.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20990,7 +20993,7 @@ MonoBehaviour:
   lever: {fileID: 1152451946}
   knob: {fileID: 1614118901}
   button: {fileID: 739656043}
-  speedCoefficient: 0.25
+  speedCoefficient: 0.3
   onEnterEvent:
     m_PersistentCalls:
       m_Calls:
@@ -38365,7 +38368,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: driving!
+  m_text: Driving
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}

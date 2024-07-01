@@ -50,8 +50,7 @@ public class DriverManager : MonoBehaviour
         constrainsSource.sourceTransform = driverSeat.transform;
         constrainsSource.weight = 1;
 
-
-    }
+     }
     // Update is called once per frame
     void Update()
     {
@@ -77,6 +76,7 @@ public class DriverManager : MonoBehaviour
             GameObject player = GameObject.FindWithTag("Player");
             player.GetComponent<DynamicMoveProvider>().enabled = false;
 
+            constrainsSource.weight = 1;
             player.GetComponent<ParentConstraint>().AddSource(constrainsSource);
             player.GetComponent<ParentConstraint>().constraintActive = true;
 
@@ -91,6 +91,7 @@ public class DriverManager : MonoBehaviour
             player.transform.position = transform.position + new Vector3(0, 1.5f, -2f);
             player.GetComponent<DynamicMoveProvider>().enabled = true;
 
+            constrainsSource.weight = 0;
             player.GetComponent<ParentConstraint>().constraintActive = false;
             player.GetComponent<ParentConstraint>().RemoveSource(0);
 
