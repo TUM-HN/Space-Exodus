@@ -15,6 +15,11 @@ TagManager:
   - car2
   - Pieza
   - Explota
+  - SamplesInfoPanel
+  - Brick
+  - Floor
+  - Window
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -23,10 +28,10 @@ TagManager:
   - Water
   - UI
   - Vehicle Control
-  - 
-  - 
-  - 
-  - 
+  - Grabbing
+  - Grabbable
+  - Hand
+  - HandPlayer
   - 
   - 
   - 

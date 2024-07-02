@@ -17,7 +17,7 @@ public class DriverManager : MonoBehaviour
     public XRKnob knob;
     public XRGripButton button;
     public float speedCoefficient;
-    public UnityEvent<GameObject> onEnterEvent;
+    public UnityEvent<GameObject> onTriggerEvent;
 
     private bool seatEmpty;
     private bool isOn;
@@ -50,7 +50,7 @@ public class DriverManager : MonoBehaviour
         constrainsSource.sourceTransform = driverSeat.transform;
         constrainsSource.weight = 1;
 
-     }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -74,28 +74,38 @@ public class DriverManager : MonoBehaviour
         if (seatEmpty)
         {
             GameObject player = GameObject.FindWithTag("Player");
-            player.GetComponent<DynamicMoveProvider>().enabled = false;
+            //player.GetComponent<DynamicMoveProvider>().enabled = false;
 
             constrainsSource.weight = 1;
+
+            //player.GetComponent<PositionConstraint>().AddSource(constrainsSource);
+            //player.GetComponent<PositionConstraint>().constraintActive = true;
+
             player.GetComponent<ParentConstraint>().AddSource(constrainsSource);
             player.GetComponent<ParentConstraint>().constraintActive = true;
 
             seatEmpty = false;
 
-            onEnterEvent.Invoke(gameObject);
-
-        }
+         }
         else
         {
             GameObject player = GameObject.FindWithTag("Player");
-            player.transform.position = transform.position + new Vector3(0, 1.5f, -2f);
-            player.GetComponent<DynamicMoveProvider>().enabled = true;
+            player.transform.position = transform.position + new Vector3(0, 1.5f, 1.5f);
+
+            //player.GetComponent<DynamicMoveProvider>().enabled = true;
 
             constrainsSource.weight = 0;
+
+            //player.GetComponent<PositionConstraint>().constraintActive = false;
+            //player.GetComponent<PositionConstraint>().RemoveSource(0);
+
             player.GetComponent<ParentConstraint>().constraintActive = false;
             player.GetComponent<ParentConstraint>().RemoveSource(0);
 
             seatEmpty = true;
+
+            onTriggerEvent.Invoke(gameObject);
+
         }
     }
 
