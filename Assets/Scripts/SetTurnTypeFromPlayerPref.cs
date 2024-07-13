@@ -27,16 +27,19 @@ public class SetTurnTypeFromPlayerPref : MonoBehaviour
     }
 
     private void SnapTurnEnable() {
-        snapTurn.leftHandSnapTurnAction.action.Enable();
         snapTurn.rightHandSnapTurnAction.action.Enable();
-        continuousTurn.leftHandTurnAction.action.Disable();
         continuousTurn.rightHandTurnAction.action.Disable();
+
+        continuousTurn.leftHandTurnAction.action.Disable();
+        snapTurn.leftHandSnapTurnAction.action.Enable();
+
     }
 
     private void ContinuousTurnEnable() {
-        snapTurn.leftHandSnapTurnAction.action.Disable();
         snapTurn.rightHandSnapTurnAction.action.Disable();
         continuousTurn.leftHandTurnAction.action.Enable();
+        snapTurn.leftHandSnapTurnAction.action.Disable();
+
         continuousTurn.rightHandTurnAction.action.Enable();
     }
 }
