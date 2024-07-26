@@ -48,10 +48,13 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
 
+        PlayerPrefs.Save();
+
     }
 
     public void QuitGame()
     {
+        PlayerPrefs.Save();
         Application.Quit();
     }
 
