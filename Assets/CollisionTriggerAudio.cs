@@ -33,7 +33,7 @@ public class CollisionTriggerAudio : MonoBehaviour
         source.time = clip.length;
         source.Play();
         source.minDistance = 1;
-        source.maxDistance = 5;
+        source.maxDistance = 3;
         source.dopplerLevel = 1;
         return source;
     }
