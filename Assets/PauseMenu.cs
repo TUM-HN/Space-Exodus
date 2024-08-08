@@ -32,6 +32,7 @@ public class PauseMenu : MonoBehaviour
 
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
+        AudioListener.pause = false;
         GameIsPaused = false;
         
     }
@@ -46,6 +47,7 @@ public class PauseMenu : MonoBehaviour
         //Show the Pause Menu and stop the time
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
+        AudioListener.pause = true;
         GameIsPaused = true;
 
         PlayerPrefs.Save();
@@ -60,6 +62,7 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu(int sceneID) {
         Time.timeScale = 1f;
+
         SceneManager.LoadScene(sceneID);
     }
 

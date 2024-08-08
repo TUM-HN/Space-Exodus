@@ -20,13 +20,6 @@ public class SpaceOutsideController : MonoBehaviour
     private bool wasOn;
     private IEnumerator coroutine;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -50,6 +43,15 @@ public class SpaceOutsideController : MonoBehaviour
     IEnumerator Timer() {
         yield return new WaitForSeconds(90);
         onEnterEvent.Invoke(lever.gameObject);
+
+    }
+
+    public void ResetCoroutine() {
+        StopCoroutine(coroutine);
+        lever.value = false;
+        wasOn = false;
+        knob.value = 0;
+        slider.value = 0.5f;
 
     }
 }

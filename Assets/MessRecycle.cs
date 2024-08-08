@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MessRecycle : MonoBehaviour
 {
@@ -11,11 +12,14 @@ public class MessRecycle : MonoBehaviour
     [SerializeField]
     List<GameObject> bottles;
 
+    public UnityEvent<GameObject> onEnterEvent;
+
     void Update()
     {
         if (bricksContainer.TrueForAll(CheckContainer))
         {
             foreach (GameObject bottle in bottles) bottle.SetActive(true);
+            onEnterEvent.Invoke(gameObject);
         }
     }
 

@@ -13,14 +13,14 @@ public class CollisionTriggerAudio : MonoBehaviour
     private AudioSource m_CollisionWithWall;
     private AudioSource m_CollisionWithWindow;
 
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Brick") m_CollisionWithBrick = SetupAudioSource(CollisionWithBrick);
         if (collision.gameObject.tag == "Window") m_CollisionWithWindow = SetupAudioSource(CollisionWithWindow);
         if (collision.gameObject.tag == "Wall") m_CollisionWithWall = SetupAudioSource(CollisionWithWall);
-
     }
-   
+
 
     private AudioSource SetupAudioSource(AudioClip clip) {
         // create the new audio source component on the game object and set up its properties

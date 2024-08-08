@@ -9,6 +9,8 @@ public class checkEmpty : MonoBehaviour
 
     public string brickcolour;
     public int numberOfBricks;
+    public AudioSource audioSource;
+    public AudioClip audioClip;
 
     private void Start()
     {
@@ -22,6 +24,7 @@ public class checkEmpty : MonoBehaviour
         {
             brick.SetActive(false);
             bricks.Add(brick);
+            audioSource.PlayOneShot(audioClip);
         }
     }
 

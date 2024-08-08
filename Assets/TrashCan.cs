@@ -5,14 +5,16 @@ using UnityEngine;
 
 public class TrashCan : MonoBehaviour
 {
+    public AudioClip audioClip;
+    public AudioSource audioSource;
+
     private void Start()
     {
         GetComponent<TriggerZone>().onEnterEvent.AddListener(InsideTrash);
-        UnityEngine.Debug.Log("start");
     }
 
     public void InsideTrash(GameObject go){
         go.SetActive(false);
-        UnityEngine.Debug.Log("delete object");
+        audioSource.PlayOneShot(audioClip);
     }
 }
