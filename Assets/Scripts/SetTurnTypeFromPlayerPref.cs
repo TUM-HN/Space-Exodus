@@ -22,7 +22,7 @@ public class SetTurnTypeFromPlayerPref : MonoBehaviour
             if (value == 0) SnapTurnEnable();
             else if (value == 1) ContinuousTurnEnable();
         }
-        else SnapTurnEnable();
+        else ContinuousTurnEnable();
 
     }
 

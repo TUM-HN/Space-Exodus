@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,10 +13,10 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject player;
 
+
     private void Start()
     {
         GameIsPaused = false;
-
     }
     // Update is called once per frame
     void Update()
@@ -54,21 +55,24 @@ public class PauseMenu : MonoBehaviour
 
     }
 
-    public void QuitGame()
+    public async void QuitGame()
     {
+        GameIsPaused = false;
+        AudioListener.pause = false;
+
+
+        AudioManager.instance.Play("EndGame");
+        await Task.Delay(500);
         PlayerPrefs.Save();
         Application.Quit();
     }
 
     public void LoadMenu(int sceneID) {
+        GameIsPaused = false;
+        AudioListener.pause = false;
         Time.timeScale = 1f;
+        PlayerPrefs.Save();
 
         SceneManager.LoadScene(sceneID);
     }
-
-    private IEnumerator coroutine()
-    {
-        yield return new WaitForSeconds(0.5f);
-     }
-
 }

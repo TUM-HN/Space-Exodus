@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class GameStartMenu : MonoBehaviour
 {
+
     [Header("UI Pages")]
     public GameObject mainMenu;
     public GameObject options;
@@ -22,7 +24,6 @@ public class GameStartMenu : MonoBehaviour
     void Start()
     {
         EnableMainMenu();
-
         //Hook events
         startButton.onClick.AddListener(StartGame);
         optionButton.onClick.AddListener(EnableOption);
@@ -35,13 +36,17 @@ public class GameStartMenu : MonoBehaviour
         }
     }
 
-    public void QuitGame()
+    public async void QuitGame()
     {
+        AudioManager.instance.Play("EndGame");
+        await Task.Delay(500);
         Application.Quit();
     }
 
     public void StartGame()
     {
+        AudioManager.instance.Play("StartGame");
+
         HideAll();
         SceneTransitionManager.singleton.GoToSceneAsync(1);
     }
