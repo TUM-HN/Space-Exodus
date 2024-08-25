@@ -91,4 +91,4 @@ Once the “change platform” is done, the picture below is what should be show
 Press **Universal Menu** button to show the menu bar, **Exit** could be chosen to escape the game.
 
 Press button A on the right controller to access the Pause Menu.
-![images](https://arc.net/l/quote/mhpmcrvb)
+![images](https://github.com/chuuuun/Spacecraft/blob/main/buttonsname.png)
