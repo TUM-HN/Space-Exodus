@@ -2,7 +2,7 @@
 The game is a space escape game. In the story, Earth succumbs to the ever-rising tide of garbage, exceeding its capacity. Forced to find a new home, humanity undergoes rigorous astronaut training. They are then sent into space on a new journey. Unfortunately, the spaceship loses power early on due to Earth’s resource depletion. This leaves humans stranded in the vast universe shortly after boarding. Thousands of humans and animals sleep within the vessel, with only trained personnel taking turns awakening to steer the ship and search for a potential new habitat. Humanity's future rests on efficiently utilizing the remaining energy and navigating through a wormhole.
 
 On Day 117, a glimmer of hope emerges. The AI and the on-duty crew member discover space debris containing enough potential energy to open a wormhole. This wormhole acts as a shortcut to a potentially habitable zone. Humanity's fate now rests on your shoulders. You must manage the limited energy and steer the ship through the wormhole skillfully. Every second counts!
-![images](https://github.com/chuuuun/Spacecraft/blob/main/spaceship.png)
+![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/spaceship.png)
 ## Scene 1: Start Scene (Menu Scene)
 The start menu serves as the game's settings panel, allowing players to adjust various options:
 + Turn Mode: Choose between continuous or snap turn modes for camera movement.
@@ -41,14 +41,14 @@ put energy on the analyzer, might need time to find which device is the analyzer
 - **Time to pass it / solve it:** 8 mins
 - **Difficulty explanation (player perspective):** 
 pilot the spaceship and avoid collision with meteors. → Hard
-![images](https://github.com/chuuuun/Spacecraft/blob/main/control%20room.png)
+![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/control%20room.png)
 # Controls
 The joysticks are always handled in this way↓
-![images](https://github.com/chuuuun/Spacecraft/blob/main/controller.png)
+![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/controller.png)
 Instruction: Grab == Middle finger placement
-![images](https://github.com/chuuuun/Spacecraft/blob/main/grab.png)
+![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/grab.png)
 Instruction: Activate == Grab + Select == Middle finger placement + Index finger placement
-![images](https://github.com/chuuuun/Spacecraft/blob/main/select.png)
+![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/select.png)
 
 # Set-up
 ## How to start the VR equipment
@@ -85,10 +85,10 @@ https://unity.com/de/products)
 - Step 5: Set the project build and run the specific VR equipment 
 Unity → File → Build Settings → Choose Android (Platform) → Change platform (take around 20-30mins)
 Once the “change platform” is done, the picture below is what should be shown
-![images](https://github.com/chuuuun/Spacecraft/blob/main/buildsetting.png)
+![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/buildsetting.png)
 - Step 5: run and build (take around 3-4 hours)
 ## How to escape/close the game 
 Press **Universal Menu** button to show the menu bar, **Exit** could be chosen to escape the game.
 
 Press button A on the right controller to access the Pause Menu.
-![images](https://github.com/chuuuun/Spacecraft/blob/main/buttonsname.png)
+![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/buttonsname.png)
