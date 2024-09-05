@@ -135,19 +135,6 @@ MonoBehaviour:
   m_Markers:
     m_Objects: []
   m_PostPlaybackState: 3
---- !u!114 &-7074659726262321389
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee016cbfb3f624420a32fe50b76c264c, type: 3}
-  m_Name: SubtitleClip
-  m_EditorClassIdentifier: 
-  subtitleText: Maybe you should have use it for the beer cooler. hahahaha
 --- !u!114 &-7010589289058582454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -161,7 +148,24 @@ MonoBehaviour:
   m_Name: SubtitleClip
   m_EditorClassIdentifier: 
   subtitleText: According to our calculations, the food reserves will allow you to
-    survive for another (calculation sound) ...15 hours...
+    survive for another...15 hours...
+--- !u!114 &-6916754812466782260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
+  m_Name: AudioPlayableAsset
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 8300000, guid: b738fc6aec98d44cc963d245363b67d6, type: 3}
+  m_Loop: 0
+  m_bufferingTime: 0.1
+  m_ClipProperties:
+    volume: 1
 --- !u!114 &-6586542857691727126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -208,7 +212,7 @@ MonoBehaviour:
   m_Name: SubtitleClip
   m_EditorClassIdentifier: 
   subtitleText: Attention!!! The new arrival of space meteor has been caught by the
-    slurp system
+    slurp system.
 --- !u!114 &-4963130233534999967
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -714,75 +718,6 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: Voice_assistant_07
   - m_Version: 1
-    m_Start: 132.94666666666666
-    m_ClipIn: 0
-    m_Asset: {fileID: -1688661663649558143}
-    m_Duration: 9.5
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -4963130233534999967}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: Voice_assistant_08
-  - m_Version: 1
     m_Start: 37.89666666666667
     m_ClipIn: 0
     m_Asset: {fileID: 3554520976876840746}
@@ -1040,6 +975,75 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: find candies
+  - m_Version: 1
+    m_Start: 132.9467
+    m_ClipIn: 0
+    m_Asset: {fileID: -6916754812466782260}
+    m_Duration: 4.519183673469388
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: -4963130233534999967}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Voice_assistant_08_1
   m_Markers:
     m_Objects: []
   m_TrackProperties:
@@ -1355,7 +1359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee016cbfb3f624420a32fe50b76c264c, type: 3}
   m_Name: SubtitleClip
   m_EditorClassIdentifier: 
-  subtitleText: 'it! !!! It''s the legendary candies. Hope you enjoy it! '
+  subtitleText: 'It''s the legendary candies. Hope you enjoy it! '
 --- !u!114 &-4564390952932090887
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1412,7 +1416,7 @@ MonoBehaviour:
     m_Start: 33.4
     m_ClipIn: 0
     m_Asset: {fileID: 2100836767272698408}
-    m_Duration: 109.04666666666665
+    m_Duration: 104.06588367346939
     m_TimeScale: 1
     m_ParentTrack: {fileID: -4250069972407756103}
     m_EaseInDuration: 0
@@ -1552,19 +1556,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   subtitleText: Throw it into the quantum black hole interstellar trashcan on the
     left.
---- !u!114 &-2883366332817139445
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee016cbfb3f624420a32fe50b76c264c, type: 3}
-  m_Name: SubtitleClip
-  m_EditorClassIdentifier: 
-  subtitleText: Energy empty. Looks like we are stuck again.
 --- !u!114 &-2844123249121837142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1631,7 +1622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: 
-  m_Time: 140.69666666666666
+  m_Time: 136.25
   m_Retroactive: 0
   m_EmitOnce: 0
   m_Asset: {fileID: 11400000, guid: c021c67318deb44ce84d259f02a5cffb, type: 2}
@@ -1712,23 +1703,6 @@ MonoBehaviour:
   m_Name: SubtitleClip
   m_EditorClassIdentifier: 
   subtitleText: Door's unlocked.
---- !u!114 &-1688661663649558143
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
-  m_Name: AudioPlayableAsset
-  m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: d96333b550abba84e9b11c61b61aa1ed, type: 3}
-  m_Loop: 0
-  m_bufferingTime: 0.1
-  m_ClipProperties:
-    volume: 1
 --- !u!114 &-1024150610136828197
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1822,7 +1796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee016cbfb3f624420a32fe50b76c264c, type: 3}
   m_Name: SubtitleClip
   m_EditorClassIdentifier: 
-  subtitleText: Congratulations. That did not work.
+  subtitleText: Congratulations. That did work. hahahaha
 --- !u!114 &-379140033816721894
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1856,12 +1830,12 @@ MonoBehaviour:
   - {fileID: -1024150610136828197}
   - {fileID: -1772941581407427406}
   - {fileID: -2070524337109848367}
+  - {fileID: -2738865439253445899}
   - {fileID: 3201148562984109073}
   - {fileID: 4469240564819077266}
   - {fileID: 5560785422015322723}
   - {fileID: -4250069972407756103}
   - {fileID: -7189561759362982541}
-  - {fileID: -2738865439253445899}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
@@ -3233,7 +3207,7 @@ MonoBehaviour:
     m_Start: 132.94666666666666
     m_ClipIn: 0
     m_Asset: {fileID: -409149772434083104}
-    m_Duration: 2.686429425328967
+    m_Duration: 4.519217006802734
     m_TimeScale: 1
     m_ParentTrack: {fileID: 3030849900745260085}
     m_EaseInDuration: 0.5
@@ -3267,126 +3241,6 @@ MonoBehaviour:
     m_MixOutCurve:
       serializedVersion: 2
       m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: SubtitleClip
-  - m_Version: 1
-    m_Start: 135.63309609199564
-    m_ClipIn: 0
-    m_Asset: {fileID: -2883366332817139445}
-    m_Duration: 2.7411322572579024
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: 3030849900745260085}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: SubtitleClip
-  - m_Version: 1
-    m_Start: 138.37422834925354
-    m_ClipIn: 0
-    m_Asset: {fileID: -7074659726262321389}
-    m_Duration: 4.0724383174131304
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: 3030849900745260085}
-    m_EaseInDuration: 0.5
-    m_EaseOutDuration: 0.5
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4

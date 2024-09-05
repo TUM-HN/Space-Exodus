@@ -10,7 +10,6 @@ public class RecordTimeRoutine : MonoBehaviour
 
     public TMP_Text PlayTime;
 
-    private int PlayTimeDay;
     private int PlayTimeHour;
     private int PlayTimeMinute;
     private int PlayTimeSecond;
@@ -36,13 +35,19 @@ public class RecordTimeRoutine : MonoBehaviour
 
             ts = TimeSpan.FromSeconds((double)MyPlayTime);
 
-            PlayTimeDay = ts.Days;
             PlayTimeHour = (int)ts.TotalHours;
             PlayTimeMinute = ts.Minutes;
             PlayTimeSecond = ts.Seconds;
 
-            PlayTime.text = PlayTimeDay.ToString() + " d - " + PlayTimeHour.ToString() + "hr - " + PlayTimeMinute.ToString() + "min - " + PlayTimeSecond.ToString() + "sec";
+            string hour = "";
 
+            if (PlayTimeHour != 0) {
+                hour = PlayTimeHour.ToString() + "hr - ";
+            }
+            //string hour = PlayTimeHour == 0 ? (PlayTimeHour.ToString() + "hr - ") : "";
+
+            PlayTime.text =  hour + PlayTimeMinute.ToString() + "min - " + PlayTimeSecond.ToString() + "sec";
+           
         }
     }
 
@@ -50,7 +55,7 @@ public class RecordTimeRoutine : MonoBehaviour
     {
         MyPlayTime = 0;
         PlayerPrefs.SetInt("PlayTime", MyPlayTime);
-        PlayTime.text = 0 + " d - " + 0 + "hr - " + 0 + "min - " + 0 + "sec";
+        PlayTime.text = 0 + "min - " + 0 + "sec";
 
     }
 

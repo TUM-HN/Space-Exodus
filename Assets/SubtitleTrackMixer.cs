@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Playables;
 
+[RequireComponent(typeof(TextMeshProUGUI))]
 public class SubtitleTrackMixer : PlayableBehaviour
 {
     public override void ProcessFrame(Playable playable, FrameData info, object playerData)
@@ -30,7 +32,16 @@ public class SubtitleTrackMixer : PlayableBehaviour
             }
         }
 
-        text.text = currentText;
+        string value = LocalisationSystem.GetLocalisedValue(currentText);
+
+        if (String.IsNullOrEmpty(value)) {
+            text.text = "NullorEmpty";
+        }
+        else {
+            text.text = value;
+
+        }
+
         text.color = new Color(1, 1, 1, currentAlpha);
     }
 }

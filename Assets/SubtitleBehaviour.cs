@@ -15,4 +15,6 @@ public class SubtitleBehaviour : PlayableBehaviour
         text.color = new Color(1, 1, 1, info.weight);
 
     }
+
+
 }
