@@ -17,24 +17,31 @@ Stranded in the vast expanse of space, a group of survivors faces a grim reality
 - **Time to pass it / solve it:** 5 mins (including the story narrative time)
 - **Difficulty explanation (player perspective):** 
 grab and move/teleport to the trashcan → Easy
+![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/spaceshiplounge.png)
+
 ### Task 2 -> Clean up the mess in the bricks room
 - **Mobile elements:** None
 - **Elements to interact:** Grab button, bricks recycle cans, bricks, candies
 - **Time to pass it / solve it:** 10 mins (including the story narrative time)
 - **Difficulty explanation (player perspective):** 
 grab and move/teleport to the trashcan several times → Medium
+![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/brickroom.jpg)
 ### Task 3 -> Disintegrate the larger meteor
 - **Mobile elements:** None
 - **Elements to interact:** Grab button, Activate button, energy, meteor, gun
 - **Time to pass it / solve it:** 3 mins
 - **Difficulty explanation (player perspective):** 
 use the gun to decompose the meteor → Easy
+![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/gun.jpg)
 ### Task 4 -> Put energy source on an analyzer
 - **Mobile elements:** None
 - **Elements to interact:** Grab button, energy, analyser
 - **Time to pass it / solve it:** 5 mins
 - **Difficulty explanation (player perspective):** 
 put energy on the analyzer, might need time to find which device is the analyzer → Easy
+![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/analyser.jpg)
+![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/ladder.jpg)
+
 ### Task 5 -> Pilot spaceship to the wormhole
 - **Mobile elements:** None
 - **Elements to interact:** Grab button, wheel, lever, knob, wormhole, Meteors
@@ -46,9 +53,8 @@ pilot the spaceship and avoid collision with meteors. → Hard
 The joysticks are always handled in this way↓
 ![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/controller.png)
 Instruction: Grab == Middle finger placement
-![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/grab.png)
 Instruction: Activate == Grab + Select == Middle finger placement + Index finger placement
-![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/select.png)
+![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/buttonsname.png)
 
 # Set-up
 ## How to start the VR equipment
@@ -87,6 +93,17 @@ Unity → File → Build Settings → Choose Android (Platform) → Change platf
 Once the “change platform” is done, the picture below is what should be shown
 ![images](https://github.com/chuuuun/Spacecraft/blob/main/Images/buildsetting.png)
 - Step 5: run and build (take around 3-4 hours)
+
+## How to cast to electronic devices
+We recommend that the game be played for the first time under the supervision of a therapist or caregiver. The recommended age for use is 8 years and older. Based on our experience, the first gameplay session may require some guidance from a caregiver and prevent the user from unintentionally leaving the guardian zone and colliding with surrounding obstacles.
+However, since VR is a single-user device, to view what the user sees, it requires projection to a computer or mobile device. Please ensure you have a Meta Quest account and that the VR device is connected to the same network.
+
+Step 1: Create your own VR account
+
+Step 2: Log in to your account on the desired casting device
+
+Step 3: Open this [Unity casting webpage](https://www.oculus.com/casting) and follow the instructions.
+
 ## How to escape/close the game 
 Press **Universal Menu** button to show the menu bar, **Exit** could be chosen to escape the game.
 
