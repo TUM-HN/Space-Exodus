@@ -5,6 +5,18 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Playables;
 
+/*
+ * Four scripts work together to create subtitles(SubtitleTrackMixer, SubtitleClip, SubtitleBehaviour, SubtitleTrack).
+ * 
+ * While subtitletrackmixer overlaps with subtitletrack, it offers a more granular control over text display. 
+ * By adjusting the text input weight, it eliminates text when no narration is present, unlike subtitletrack. 
+ * Furthermore, it integrates with a localization system to ensure that subtitles are displayed in the appropriate language 
+ * based on the selected language setting.
+ * 
+ * Based on the following YouTube video, these four scripts have been adapted and modified to meet the game's unique needs.
+ * YT: https://www.youtube.com/watch?v=12bfRIvqLW4
+ */
+
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class SubtitleTrackMixer : PlayableBehaviour
 {

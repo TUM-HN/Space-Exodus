@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
+/*
+ *  This script is for an autonomous door system. 
+ *  It utilizes a trigger zone component to detect object ingress into a designated area, triggering the openDoor() function 
+ *  and subsequently initiating a countdown timer(coroutine()) for automated door closure.
+ */
+
 public class AutonomousDoor : MonoBehaviour
 {
     public Animator animator;

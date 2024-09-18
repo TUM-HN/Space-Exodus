@@ -5,6 +5,16 @@ using UnityEngine.Events;
 using UnityEngine.Playables;
 using UnityEngine.XR.Content.Interaction;
 
+/*
+ * The SpaceoutsideController is capable of manipulating the asteroid field to approach the spacecraft. 
+ * Due to the spaceship's more complex composition, 
+ * unifying the coordinates of its components would be more computationally expensive compared to manipulating the asteroid field. 
+ * Moreover, as the mission is time-bound, controlling the spaceship away from the wormhole serves as a game mechanic 
+ * to discourage players from deliberately exiting the wormhole and prematurely terminating the game.
+ * 
+ * Parts of the source code are referenced from: https://www.youtube.com/watch?v=YBQ_ps6e71k
+ */
+
 public class SpaceOutsideController : MonoBehaviour
 {
     public UnityEvent<GameObject> onEnterEvent;

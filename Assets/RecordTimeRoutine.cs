@@ -4,6 +4,18 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/*
+ * RecordTimeRoutine is designed to track gameplay duration. 
+ * The Start() method retrieves the previously recorded playtime and initiates a new time calculation by calling RecordTime(). 
+ * In addition to starting the timer, RecordTime() is also responsible for displaying the playtime in the pause menu. 
+ * The Reset() method allows for resetting the MyPlayTime parameter. 
+ * The OnApplicationQuit() method ensures that the gameplay duration is recorded in player preferences
+ * 
+ * The following YouTube video and webpage served as references for the creation of this script
+ * YT:https://www.youtube.com/watch?v=IQkabxKDY3M
+ * Webpage: https://discussions.unity.com/t/how-to-record-the-real-playing-time/127990
+ */
+
 public class RecordTimeRoutine : MonoBehaviour
 {
     private int MyPlayTime;

@@ -2,6 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This script handles audio playback for collision events. 
+ * Three audio listeners are initialized to differentiate between collisions involving bricks, windows, and the ground. 
+ * Collision detection is achieved by examining the tag of the collided GameObject.
+ * 
+ * AudioClip can be customised here: https://pixabay.com/sound-effects/search/brick/
+ */
+
 public class CollisionTriggerAudio : MonoBehaviour
 {
 

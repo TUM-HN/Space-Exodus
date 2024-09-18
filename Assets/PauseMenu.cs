@@ -4,6 +4,15 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ * The pause menu script functions as the core controller for the pause menu, 
+ * dictating the behaviors triggered by various button inputs.
+ * 
+ * This document primarily references the following video: 
+ * https://www.youtube.com/watch?v=ROwsdftEGF0
+ * https://www.youtube.com/watch?v=JivuXdrIHK0
+ * 
+ */
 
 public class PauseMenu : MonoBehaviour
 {
@@ -55,6 +64,8 @@ public class PauseMenu : MonoBehaviour
 
     }
 
+    // When Quit is called, bool name is set to false in case the error after reopen.
+    // Playerprofs need to be saved before the application is quit!!
     public async void QuitGame()
     {
         GameIsPaused = false;
@@ -67,6 +78,7 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
     }
 
+    // When Menu is called, bool names is set to false and time scale is recovered in case the error after reenter the game.
     public void LoadMenu(int sceneID) {
         GameIsPaused = false;
         AudioListener.pause = false;

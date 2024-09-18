@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
+/*
+ * PlayStep offers the possibility to play a timeline in segments. 
+ * Through public serialized Step, you can save the desired time and chapters externally. 
+ * When PlayStepIndex is called, it will play the corresponding segment of the timeline according to the index.
+ * 
+ * The code reference form the following yt video: https://www.youtube.com/watch?v=YBQ_ps6e71k
+ */
+
 public class Playsteps : MonoBehaviour
 {
     PlayableDirector director;

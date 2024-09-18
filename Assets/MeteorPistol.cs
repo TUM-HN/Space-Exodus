@@ -4,6 +4,15 @@ using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 
+/*
+ * This script, when attached to a pistol, toggles a Boolean 'rayActive' upon 'select' input, correspondingly activating particle effects and sound. 
+ * The 'Update()' function continuously evaluates 'rayActive'. 
+ * If true, a raycast is initiated from the weapon along a predefined path. 
+ * Upon collision with an object, a "Break" message is dispatched.
+ * 
+ * The source code is referenced from the following yt video: https://www.youtube.com/watch?v=YBQ_ps6e71k
+ */
+
 public class MeteorPistol : MonoBehaviour
 {
 

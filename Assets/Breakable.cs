@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+/*
+ * The Breakable class sets a parent object containing child objects to an inactive state while simultaneously activating its child objects. 
+ * This class also breaks the parent-child relationship to prevent child objects from inheriting the inactive state of the parent. 
+ * This is crucial for ensuring that child objects remain active in the game environment
+ * The source code is from the following YouTube video: https://www.youtube.com/watch?v=YBQ_ps6e71k
+ */
 
 public class Breakable : MonoBehaviour
 {

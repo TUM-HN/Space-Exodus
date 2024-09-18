@@ -5,6 +5,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 
+/*
+ * SetOptionfromUI() functions within the main menu's Option menu. 
+ * Whenever a customized setting is changed, a listener monitors these changes and stores them in playerprefs + apply them. 
+ * This ensures that the next time the user opens the game, the settings they've customized will be preserved and applied.
+ */
+
 public class SetOptionFromUI : MonoBehaviour
 {
     public Scrollbar volumeSlider;
@@ -61,5 +67,10 @@ public class SetOptionFromUI : MonoBehaviour
         {
             LocalisationSystem.language = LocalisationSystem.Language.Spanish;
         }
+    }
+
+    private void OnApplicationQuit()
+    {
+        PlayerPrefs.Save();
     }
 }

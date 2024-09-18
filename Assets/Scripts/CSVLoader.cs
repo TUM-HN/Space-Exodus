@@ -4,6 +4,15 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
+/*
+ * Providing text in multiple languages requires two scripts(LocalisationSystem, CSVLoader) and dictionary csv files. 
+ * The CSV loader parses the contents of a CSV file and stores them as dictionaries. 
+ * It's called within the localization system. Notably, 
+ * the CSV loader uses newline characters ("/n") to separate entries and commas (",") to index different languages.
+ * 
+ * This script is form: https://www.youtube.com/watch?v=c-dzg4M20wY
+ */
+
 public class CSVLoader
 {
     //Reference file

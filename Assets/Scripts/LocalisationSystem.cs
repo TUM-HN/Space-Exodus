@@ -2,6 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Providing text in multiple languages requires two scripts(LocalisationSystem, CSVLoader) and dictionary csv files. 
+ * localisationUI provides a method called GetLocalisedValue to call the dictionary and initializes all necessary parameters 
+ * if they haven't been initialized yet. Currently supported languages are English and Spanish.
+ * 
+ * This script is form: https://www.youtube.com/watch?v=c-dzg4M20wY
+ */
+
 public class LocalisationSystem
 {
     public enum Language {
@@ -22,6 +30,12 @@ public class LocalisationSystem
 
         localisaedEN = csvLoader.GetDictionaryValues("en");
         localisaedES = csvLoader.GetDictionaryValues("es");
+
+        if (PlayerPrefs.HasKey("language")) {
+            language = (PlayerPrefs.GetInt("language") == 0 ? Language.English : Language.Spanish);
+        } else {
+            language = Language.English;
+        }
 
         isInit = true;
     }
@@ -54,5 +68,4 @@ public class LocalisationSystem
         }
         return dictionaryString.TrimEnd(',', ' ') + "}";
     }
-
 }
